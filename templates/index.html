@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Diabetics Prediction System</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{{url_for('static',filename='assets/img/favicon.png')}}" rel="icon">
+  <link href="{{url_for('static',filename='assets/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{{url_for('static',filename='assets/vendor/animate.css/animate.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename='assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename='assets/vendor/bootstrap-icons/bootstrap-icons.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename='assets/vendor/boxicons/css/boxicons.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename='assets/vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename='assets/vendor/glightbox/css/glightbox.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename='assets/vendor/remixicon/remixicon.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename='assets/vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{{url_for('static',filename='assets/css/style.css')}}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Medilab - v4.2.0
+  * Template URL: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="container d-flex justify-content-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope"></i> <a href="mailto:mad@madblocks.tech">diabetics@drdiabetics.com</a>
+        <i class="bi bi-phone"></i> +91 7893015625
+      </div>
+      <div class="d-none d-lg-flex social-links align-items-center">
+        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href="index.html">Project</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Exercises</a></li>
+          <li><a class="nav-link scrollto" href="#departments">Department</a></li>
+          <li><a class="nav-link scrollto" href="#doctors">Doctors</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <a href="#appointment" class="appointment-btn scrollto"><span class="d-none d-md-inline">Diabetes</span> Prediction</a>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container">
+      <h1>Welcome to Diabetes Prediction</h1>
+      <a href="#about" class="btn-get-started scrollto">Get Started</a>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-4 d-flex align-items-stretch">
+            <div class="content">
+              <h3>About Diabetes Mellitus(DM)</h3>
+              <p>
+                TYPE-1: Insulin-Dependent Diabetes Mellitus (IDDM).<br>
+                TYPE-2: Non-Insulin-Dependent Diabetes Mellitus (NIDDM).<br> 
+                TYPE-3: Gestational Diabetes(GD).
+              </p>
+              <div class="text-center">
+                <a href="#" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 d-flex align-items-stretch">
+            <div class="icon-boxes d-flex flex-column justify-content-center">
+              <div class="row">
+                <div class="col-xl-4 d-flex align-items-stretch">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="bx bx-receipt"></i>
+                    <h4>Type-1: IDDM</h4>
+                    <p>Inability of human’s body to generate sufficient insulin is the reason behind this type of DM and hence it is required to inject insulin to a patient.</p>
+                  </div>
+                </div>
+                <div class="col-xl-4 d-flex align-items-stretch">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="bx bx-cube-alt"></i>
+                    <h4>Type-2: NIDDM</h4>
+                    <p>This type of Diabetes is seen when body cells are not able to use insulin properly.</p>
+                  </div>
+                </div>
+                <div class="col-xl-4 d-flex align-items-stretch">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="bx bx-images"></i>
+                    <h4>Type-3: GD</h4>
+                    <p>It increase in blood sugar level in pregnant woman where diabetes is not detected earlier results in this type of diabetes. DM has long term complications associated with it. Also, there are high risks of various health problems for a diabetic person.</p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End .content-->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container-fluid">
+
+        <div class="row">
+          <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch position-relative">
+            
+          </div>
+
+          <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
+            <h3>What is Diabetes?</h3>
+            <p>Diabetes is the condition in which the body does not properly process food for use as energy. Most of the food we eat is turned into glucose, or sugar, for our bodies to use for energy. The pancreas, an organ that lies near the stomach, makes a hormone called insulin to help glucose get into the cells of our bodies.</p>
+
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-fingerprint"></i></div>
+              <h4 class="title"><a href="">General Symptoms of Diabetics</a></h4>
+              <p class="description">increased hunger, increased thirst, weight loss, frequent urination, blurry vision, extreme fatigue, sores that don't heal.</p>
+            </div>
+
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-gift"></i></div>
+              <h4 class="title"><a href="">Healthy Diabetic Foods To Eat</a></h4>
+              <p class="description">Broccoli, pepper, tomatoes, green peas and potatoes, watermelon, papaya, bananas, grapes and oranges, Whole wheat grains, rice, oats and barley, Fish (Tuna and salmon), Egg, Chicken without skin, Peanuts and nuts, Yoghurt, Cheese.</p>
+            </div>
+
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-atom"></i></div>
+              <h4 class="title"><a href="">Diabetic Foods To Avoid</a></h4>
+              <p class="description">Foods containing saturated fats (Beef, pork and chicken with skin).<br>Foods containing trans fat (cakes, cookies, fast food, pizza and microwave popcorn).<br>Foods high in salt or sodium (salted canned meat, sausage, sardines, and smoked chicken).<br>Avoid sugary soda drinks containing sugar and soda such as energy drinks. Instead, consume plenty of water when you are thirsty.</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Exercises</h2>
+          <p>If you have diabetes, being active makes your body more sensitive to insulin (the hormone that allows cells in your body to use blood sugar for energy), which helps manage your diabetes. Physical activity also helps control blood sugar levels and lowers your risk of heart disease and nerve damage.
+</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="icon-box">
+              <div class="pic"><img src="{{url_for('static',filename='assets/img/Walking.jpeg')}}" class="img-fluid" alt=""></div>
+              <br>
+              <h4><a href="">Walking</a></h4>
+              <p>When you do moderate exercise, like walking, that makes your heart beat a little faster and breathe a little harder. Your muscles use more glucose, the sugar in your blood stream. Over time, this can lower your blood sugar levels. It also makes the insulin in your body work better.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+            <div class="icon-box">
+              <div class="pic"><img src="{{url_for('static',filename='assets/img/Cycling.jpg')}}" class="img-fluid" alt=""></div>
+              <br>
+              <h4><a href="">Cycling</a></h4>
+              <p>A study published in Medicine and Science in Sports and Exercise showed that cycling at a moderate pace for an hour allows overweight people with diabetes to halve their blood sugar levels in the next 24 hours. Even cycling faster for only half an hour can reduce levels for an entire day, but only by 19%.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+            <div class="icon-box">
+              <div class="pic"><img src="{{url_for('static',filename='assets/img/Yoga.jpg')}}" class="img-fluid" alt=""></div>
+              <br>
+              <h4><a href="">Yoga</a></h4>
+              <p>Yoga therapy increases the number of insulin receptors and increases the proportion of receptor binding in patients with diabetes. It improves insulin kinetics by reducing fasting insulin levels, shifting the peak insulin level to the left, and by normalising the insulin-to-glucose ratio.</p>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Appointment Section ======= -->
+    <section id="appointment" class="appointment section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Diabetes Prediction</h2>
+
+        </div>
+
+        <form method="POST">
+          <div class="row">
+            <div class="col-md-4 form-group">
+              <input type="text" name="name" class="form-control"  placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-md-4 form-group mt-3 mt-md-0">
+              <input type="email" class="form-control" name="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+              <div class="validate"></div>
+            </div>
+            <div class="col-md-4 form-group mt-3 mt-md-0">
+              <input type="number" class="form-control" name="age"  placeholder="Your Age" data-msg="Please enter valid age">
+              <div class="validate"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 form-group mt-3">
+              <input type="number" name="dpf" class="form-control" placeholder="Enter Diabetic Pedigree Function" data-rule="minlen:1" data-msg="Please enter correct value">
+              <div class="validate"></div>
+            </div>
+            <div class="col-md-4 form-group mt-3">
+              <input type="number" name="bmi" class="form-control" placeholder="Enter BMI" data-rule="minlen:1" data-msg="Please enter correct value">
+              <div class="validate"></div>
+            </div>
+            <div class="col-md-4 form-group mt-3">
+              <input type="number" name="insulin" class="form-control" placeholder="Enter Insulin Rate" data-rule="minlen:1" data-msg="Please enter correct value">
+              <div class="validate"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 form-group mt-3">
+              <input type="number" name="skinthickness" class="form-control" placeholder="Your Skin Thickness Value" data-rule="minlen:1" data-msg="Please enter correct value">
+              <div class="validate"></div>
+            </div>
+            <div class="col-md-4 form-group mt-3">
+              <input type="number" name="bp" class="form-control" placeholder="Your BP Value" data-rule="minlen:1" data-msg="Please enter correct value">
+              <div class="validate"></div>
+            </div>
+            <div class="col-md-4 form-group mt-3">
+              <input type="number" name="glucose" class="form-control" placeholder="Enter Glucose Value" data-rule="minlen:1" data-msg="Please enter correct value">
+              <div class="validate"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 form-group mt-3">
+              <input type="number" name="pregnancies" class="form-control" placeholder="Enter pregnancies" data-rule="minlen:1" data-msg="Please enter correct value">
+              <div class="validate">
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group mt-3">
+            <textarea class="form-control" name="message" rows="5" placeholder="Message (Optional)"></textarea>
+            <div class="validate"></div>
+          </div>
+          <br/>
+          <div class="text-center"><input type="submit"></div>
+		  <h1>Output: <span style="color:green">{{prediction_output}}</style></h1>
+        </form>
+
+      </div>
+    </section><!-- End Appointment Section -->
+
+    <!-- ======= Departments Section ======= -->
+    <section id="departments" class="departments">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Department</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-3">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Endocrinologist</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-9 mt-4 mt-lg-0">
+            <div class="tab-content">
+              <div class="tab-pane active show" id="tab-1">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Endocrinologist</h3>
+                    <p class="fst-italic">Endocrinologists are medical doctors who specialize in diagnosing and treating health conditions related to problems with the body's hormones, hormonal glands, and related tissues.<br><br> Human body parts that mainly get effected due to diabetes are: <br> Heart, Eyes, Feet, Skin, Kidneys.
+</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox play-btn mb-4">
+                      <img src="{{url_for('static',filename='assets/img/departments-1.png')}}" alt="" class="img-fluid">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      </div>
+    </section><!-- End Departments Section -->
+
+    <!-- ======= Doctors Section ======= -->
+    <section id="doctors" class="doctors">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Doctors</h2>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="{{url_for('static',filename='assets/img/doctors/doctors-1.jpg')}}" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Walter White</h4>
+                <span>Chief Medical Officer</span>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4 mt-lg-0">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="{{url_for('static',filename='assets/img/doctors/doctors-2.jpg')}}" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Sarah Jhonson</h4>
+                <span>Endocrinologist</span>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="{{url_for('static',filename='assets/img/doctors/doctors-3.jpg')}}" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>William Anderson</h4>
+                <span>Endocrinologist</span>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="{{url_for('static',filename='assets/img/doctors/doctors-4.jpg')}}" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Amanda Jepson</h4>
+                <span>Endocrinologist</span>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Doctors Section -->
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Frequently Asked Questions</h2>
+        </div>
+
+        <div class="faq-list">
+          <ul>
+            <li data-aos="fade-up">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Symptoms in Men and Women <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                <p>
+                  For Men:<br> In addition to the general symptoms of diabetes, men with diabetes may have a decreased sex drive, erectile dysfunction (ED), and poor muscle strength.<br> For Women: <br>Women with diabetes can also have symptoms such as urinary tract infections yeast infections, and dry, itchy skin.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Symptoms of Type-1, Type2, Type-3 Diabetes: <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Symptoms of Type-1 Diabetes can include:<br>Extreme hunger, increased thirst, unintentional weight loss, frequent urination, blurry vision, tiredness, It may also result in mood changes.<br>Symptoms of Type-2 Diabetes can include:<br>Increased hunger, increased thirst, increased urination, blurry vision, tiredness, sores that are slow to heal, It may also cause recurring infections. This is because elevated glucose levels make it harder for the body to heal.<br> Symptoms of Type-3 Diabetes can include:<br>Most women with gestational diabetes don't have any symptoms. The condition is often detected during a routine blood sugar test or oral glucose tolerance testthat is usually performed between the 24th and 28th weeks of gestation. In rare cases, a woman with gestational diabetes will also experience increased thirst or urination.
+                   </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Diabetes Risk Factors: <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Certain factors increase your risk for diabetes.<br> Type-1 Diabetes:<br> You're more likely to get type 1 diabetes if you're a child or teenager, you have a parent or sibling with the condition, or you carry certain genes that are linked to the disease.<br>Type-2 Diabetes:<br> Your risk for type 2 diabetes increases if you: are overweight, are age 45 or older, have a parent or sibling with the condition, aren't physically active, have had gestational diabetes, have prediabetes, have high blood pressure, high cholesterol, or high triglycerides.<br> Type-3 Diabetes:<br> Your risk for gestational diabetes increases if you: are overweight, are over age 25, had gestational diabetes during a past pregnancy, have given birth to a baby weighing more than 9 pounds, have a family history of type 2 diabetes, have polycystic ovary syndrome(PCOS).
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="300">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">Treatment of Diabetes <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Doctors treat diabetes with a few different medications. Some of these drugs are taken by mouth, while others are available as injections.<br>Type-1 Diabetes:<br> Insulin is the main treatment for type 1 diabetes. It replaces the hormone your body isn't able to produce.
+There are four types of insulin that are most commonly used. They're differentiated by how quickly they start to work, and how long their effects last:<br> Rapid-acting insulin starts to work within 15 minutes and its effects last for 3 to 4 hours.<br> Short-acting insulin starts to work within 30 minutes and lasts 6 to 8 hours.<br> Intermediate-acting insulin starts to work within 1 to 2 hours and lasts 12 to 18 hours.<br>
+Long-acting insulin starts to work a few hours after injection and lasts 24 hours or longer.<br>
+Type-2 Diabetes:<br> Diet and exercise can help some people manage type 2 diabetes. If lifestyle changes aren't enough to lower your blood sugar, you'll need to take medication.<br> Type-3 Diabetes:<br> You'll need to monitor your blood sugar level several times a day during pregnancy. If it's high, dietary changes and exercise may or may not be enough to bring it down. According to the Mayo Clinic, about 10 to 20 percent of women with gestational diabetes will need insulin to lower their blood sugar. Insulin is safe for the growing baby.
+ </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="400">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">Diabetes in Pregancy and Diabetes in Children: <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Diabetes in Pregancy:<br> During pregnancy, your placenta makes hormones that cause glucose to build up in your blood. Usually, your pancreas can send out enough insulin to handle it. But if your body can't make enough insulin or stops using insulin as it should, your blood sugar levels rise, and you get gestational diabetes(Type-3 diabetes).<br> Diabetes in Children:<br> As the blood sugar level drops, so does the secretion of insulin from the pancreas. Type 2 diabetes develops when the body becomes resistant to insulin or when the pancreas stops making enough insulin. The resulting buildup of sugar in the bloodstream can cause symptoms of high blood sugar.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="400">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">How can I check if I have diabetes? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  A fasting blood sugar level from 100 to 125 mg/dL (5.6 to 6.9 mmol/L) is considered prediabetes. If it's 126 mg/dL (7 mmol/L) or higher on two separate tests, you have diabetes. Oral glucose tolerance test. For this test, you fast overnight, and the fasting blood sugar level is measured.
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="400">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">What happens when your blood sugar is low(Hypoglycemia)? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Most people will feel the effects and symptoms of low blood sugar when blood glucose levels are lower than 50 mg/dL. Symptoms and signs include nervousness, dizziness, trembling, sweating, hunger, weakness, and palpitations. Severe cases may lead to seizures and loss of consciousness.
+                </p>
+                   </div>
+            </li>
+            <li data-aos="fade-up" data-aos-delay="400">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">What happens when your blood sugar is high(Hyperglycemia)? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Drink more water. Water helps remove excess sugar from your blood through urine, and it helps you avoid dehydration.<br> Exercise more.<br> Caution: If you have type 1 diabetes and your blood sugar is high, you need to check your urine for ketones.<br> Change your eating habits.<br> Switch medications.
+                </p>
+                   </div>
+            </li>
+
+
+          </ul>
+        </div>
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+
+        <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="{{url_for('static',filename='assets/img/testimonials/Bindu.jpg')}}" class="testimonial-img" alt="">
+                  <h3>Hima Bindu</h3>
+                  <h4>Designer</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Best solution to predict diabetes and avoid serious issues due to it by its tips and suggestions.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="{{url_for('static',filename='assets/img/testimonials/Mounika.jpg')}}" class="testimonial-img" alt="">
+                  <h3>Mounika</h3>
+                  <h4>Freelancer</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Helped alot during the Covid times to reduce blood glucose level at home.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="{{url_for('static',filename='assets/img/testimonials/Kiranmai.jpg')}}" class="testimonial-img" alt="">
+                  <h3>Kiranmai</h3>
+                  <h4>Entrepreneur</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Excercises and food tips provided based on individual glucose levels helped for maintainance of health.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Gallery Section ======= -->
+    <section id="gallery" class="gallery">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Gallery</h2>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row no-gutters">
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{{url_for('static',filename='assets/img/gallery/gallery-1.jpg')}}" class="galelry-lightbox">
+                <img src="{{url_for('static',filename='assets/img/gallery/gallery-1.jpg')}}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{{url_for('static',filename='assets/img/gallery/gallery-2.jpg')}}" class="galelry-lightbox">
+                <img src="{{url_for('static',filename='assets/img/gallery/gallery-2.jpg')}}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{{url_for('static',filename='assets/img/gallery/gallery-3.jpg')}}" class="galelry-lightbox">
+                <img src="{{url_for('static',filename='assets/img/gallery/gallery-3.jpg')}}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{{url_for('static',filename='assets/img/gallery/gallery-4.jpg')}}" class="galelry-lightbox">
+                <img src="{{url_for('static',filename='assets/img/gallery/gallery-4.jpg')}}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{{url_for('static',filename='assets/img/gallery/gallery-5.jpg')}}" class="galelry-lightbox">
+                <img src="{{url_for('static',filename='assets/img/gallery/gallery-5.jpg')}}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{{url_for('static',filename='assets/img/gallery/gallery-6.jpg')}}" class="galelry-lightbox">
+                <img src="{{url_for('static',filename='assets/img/gallery/gallery-6.jpg')}}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{{url_for('static',filename='assets/img/gallery/gallery-7.jpg')}}" class="galelry-lightbox">
+                <img src="{{url_for('static',filename='assets/img/gallery/gallery-7.jpg')}}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{{url_for('static',filename='assets/img/gallery/gallery-8.jpg')}}" class="galelry-lightbox">
+                <img src="{{url_for('static',filename='assets/img/gallery/gallery-8.jpg')}}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Gallery Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+        </div>
+      </div>
+
+      <div>
+		<iframe style="border:0; width:100%; height:350px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15295.908037230454!2d80.8743421!3d16.5776649!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe7dbf6c842d3a281!2sUsha%20Rama%20College%20Of%20Engineering%20And%20Technology!5e0!3m2!1sen!2sin!4v1622446144621!5m2!1sen!2sin" frameborder="0" allowfullscreen></iframe>
+        
+      </div>
+
+      <div class="container">
+        <div class="row mt-5">
+
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>Department of CSE, Usharama College of Engineering and Technology, Vijayawada</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>diabetics@drdiabetics.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+91 7893015625</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0">
+
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Project</h3>
+            <p>
+              Department of CSE <br>
+              Usharama College of Engineering and Technology<br>
+              Vijayawada <br><br>
+              <strong>Phone:</strong> +91 7893015625<br>
+              <strong>Email:</strong> diabetics@drdiabetics.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Diet Plans</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Diabetics Tests</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Remote Treatment</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Diabetics Prediction</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Online Remedies</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Join Our Newsletter</h4>
+            <p>Let us grow together.</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Project</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/ -->
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{{url_for('static',filename='assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+  <script src="{{url_for('static',filename='assets/vendor/glightbox/js/glightbox.min.js')}}"></script>
+  <script src="{{url_for('static',filename='assets/vendor/php-email-form/validate.js')}}"></script>
+  <script src="{{url_for('static',filename='assets/vendor/purecounter/purecounter.js')}}"></script>
+  <script src="{{url_for('static',filename='assets/vendor/swiper/swiper-bundle.min.js')}}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{{url_for('static',filename='assets/js/main.js')}}"></script>
+
+</body>
+
+</html>
